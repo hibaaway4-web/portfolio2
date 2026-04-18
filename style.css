@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #141212;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #e0e0ff;
+}
+
+nav {
+  background-color: #f0d0f8;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #6a0dad;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+section h2 {
+  color: #d2691e;
+  margin-bottom: 1rem;
+  border-top: 3px solid #4343df;
+  padding-top: 0.5rem;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill {
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 1 1 120px;
+  text-align: center;
+  background-color: #28cee0;
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  background-color: #ed0a4a;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+  background-color: #118a33;
+  color: #fff;
+}
+#contact {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  color: #f517e6;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #e00ed5;
+  box-shadow: 0 0 6px rgba(106, 13, 173, 0.3);
+  outline: none;
+}
+#contactForm button {
+  background-color: #0ddb14;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contactForm button:hover {
+  background-color: #d2691e;
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  #contact {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+.dark-mode {
+  background-color: #121212;
+  color: #22a60e;
+}
+footer {
+  background-color: #3604ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

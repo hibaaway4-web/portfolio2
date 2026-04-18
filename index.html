@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiba Away - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hiba Away</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I’m a passionate future web developer with experience in creating beautiful and functional websites. 
+      I enjoy learning new technologies and solving problems through code.
+    </p>
+    <p>
+      When I’m not coding, you’ll find me at the gym or exploring creative design ideas.
+    </p>
+  </section>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skillsContainer">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git</div>
+      <div class="skill">Problem Solving</div>
+    </div>
+  </section>
+
+  
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio showcasing my work and skills, built with HTML and CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Recipe Blog</h3>
+      <p>A responsive blog for sharing cooking recipes, featuring clean design and easy navigation.</p>
+    </div>
+    <div class="project">
+      <h3>Todo List App</h3>
+      <p>An interactive Todo list application to organize daily tasks, built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p><b>Email:</b> hiba.doe@example.com</p>
+    <p><b>Phone:</b> (216) 92972499</p>
+    <p><b>Location:</b> Sfax, Tunisia</p>
+  </section>
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+
+
+<section id="contact">
+  <h2>Send Me a Message </h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if(name && email && message){
+      alert("Thank you, " + name + "! Your message has been sent.");
+      form.reset();
+    } else {
+      alert("Please fill in all fields.");
+    }
+  });
+</script>
+<script>
+  const toggleBtn = document.getElementById('darkModeToggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2026 Hiba Away. All rights reserved.</p>
+  </footer>
+</body>
+</html>
